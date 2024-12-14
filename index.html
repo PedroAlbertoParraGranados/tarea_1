@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Fotos Interactiva</title>
+  <style>
+    #imagen {
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      background-color: #f4f4f4;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      line-height: 200px;
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .miniatura {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="imagen">Pase el ratón por encima de una imagen para mostrarla aquí</div>
+  <div>
+    <img class="miniatura" src="https://via.placeholder.com/300" alt="Imagen 1" onmouseover="upDate(this)" onmouseout="deshacer()">
+    <img class="miniatura" src="https://via.placeholder.com/300/ff0000" alt="Imagen 2" onmouseover="upDate(this)" onmouseout="deshacer()">
+    <img class="miniatura" src="https://via.placeholder.com/300/00ff00" alt="Imagen 3" onmouseover="upDate(this)" onmouseout="deshacer()">
+    <img class="miniatura" src="https://via.placeholder.com/300/0000ff" alt="Imagen 4" onmouseover="upDate(this)" onmouseout="deshacer()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
